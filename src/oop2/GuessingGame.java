@@ -13,7 +13,7 @@ public class GuessingGame {
 	private int upperBound;
 	private int secret;
 	private String hint;
-	private int count = 0;
+	private int count;
 
 	/**
 	 * Initialize a new game.
@@ -34,7 +34,9 @@ public class GuessingGame {
 	 * @return true if input number equal the random number, false if input number not equal the random number
 	 */
 	public boolean guess(int number) {
-
+		
+		count++; //increase count number of trying
+		
 		if (secret == number) {
 			System.out.println("Correct. The secret is " + number + ".");
 			return true;
@@ -45,8 +47,6 @@ public class GuessingGame {
 				setHint("Sorry, your guess is too small.");
 			}
 			
-			getHint();
-			count++; //increase count number of trying
 			return false;
 		}
 
