@@ -13,7 +13,7 @@ public class GuessingGame {
 	private int upperBound;
 	private int secret;
 	private String hint;
-	private int count = 1;
+	private int count = 0;
 
 	/**
 	 * Initialize a new game.
