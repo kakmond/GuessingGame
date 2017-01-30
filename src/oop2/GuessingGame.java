@@ -25,6 +25,7 @@ public class GuessingGame {
 		this.upperBound = upperBound;
 		this.secret = getRandomNumber(upperBound);
 		this.hint = "I'm thinking of a number between 1 and " + upperBound + ".";
+		this.count = 0;
 	}
 
 	/**
