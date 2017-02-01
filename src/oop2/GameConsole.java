@@ -21,7 +21,7 @@ public class GameConsole {
 		String title = "Guessing Game";
 		String prompt = "Your guess? ";
 		System.out.print(title + "\n" + game.getHint() + "\n" + prompt);
-		int UserRandom = input.nextInt();
+		int userRandom = input.nextInt();
 		
 		while (game.guess(UserRandom) == false) {
 			System.out.print(game.getHint()+"\n" + prompt);
