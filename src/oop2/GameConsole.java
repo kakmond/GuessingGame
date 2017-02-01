@@ -25,11 +25,11 @@ public class GameConsole {
 		
 		while (game.guess(UserRandom) == false) {
 			System.out.print(game.getHint()+"\n" + prompt);
-			UserRandom = input.nextInt();
+		        userRandom = input.nextInt();
 		}
 		
 		System.out.println("You used " + game.getCount() + " guesses.");
-		return UserRandom;
+		return userRandom;
 
 	}
 }
