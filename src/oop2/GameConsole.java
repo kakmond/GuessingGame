@@ -23,7 +23,7 @@ public class GameConsole {
 		System.out.print(title + "\n" + game.getHint() + "\n" + prompt);
 		int userRandom = input.nextInt();
 		
-		while (game.guess(UserRandom) == false) {
+		while (game.guess(userRandom) == false) {
 			System.out.print(game.getHint()+"\n" + prompt);
 		        userRandom = input.nextInt();
 		}
