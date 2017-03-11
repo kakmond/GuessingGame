@@ -27,7 +27,7 @@ public class GameConsole {
 			System.out.print(game.getHint()+"\n" + prompt);
 		        userRandom = input.nextInt();
 		}
-		
+		System.out.println(game.getHint());
 		System.out.println("You used " + game.getCount() + " guesses.");
 		return userRandom;
 
