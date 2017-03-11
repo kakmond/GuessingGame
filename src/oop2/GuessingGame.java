@@ -39,7 +39,7 @@ public class GuessingGame {
 		count++; //increase count number of trying
 		
 		if (secret == number) {
-			System.out.println("Correct. The secret is " + number + ".");
+			setHint("Correct. The secret is " + number + ".");
 			return true;
 		} else {
 			if (number > secret) {
